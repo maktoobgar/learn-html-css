@@ -1,3 +1,143 @@
-body{
-  background-color: red;
+@font-face {
+  font-family: "Rye";
+  src: url("../fonts/rye-v7-latin-regular.woff") format("woff"),
+       url("../fonts/rye-v7-latin-regular.woff2") format("woff2"),
+       url("../fonts/rye-v7-latin-regular.ttf") format("ttf"),
+       url("../fonts/rye-v7-latin-regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "abril-fatface";
+  src: url("../fonts/abril-fatface-v11-latin-regular.woff") format("woff"),
+       url("../fonts/abril-fatface-v11-latin-regular.woff2") format("woff2"),
+       url("../fonts/abril-fatface-v11-latin-regular.ttf") format("ttf"),
+       url("../fonts/abril-fatface-v11-latin-regular.eot") format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cardo";
+  src: url("../fonts/cardo-v11-latin-regular.woff") format("woff"),
+       url("../fonts/cardo-v11-latin-regular.woff2") format("woff2"),
+       url("../fonts/cardo-v11-latin-regular.ttf") format("ttf"),
+       url("../fonts/cardo-v11-latin-regular.eot") format("eot");
+}
+
+* {
+  box-sizing: border-box;
+  /*without this if u set padding 20 and set a box with 200 width,
+  u have 240 width box but with this option u have 200 width fix*/
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul, li {
+  padding: 0px; /*Padding fasele az daroon*/
+  margin: 0px; /*Padding fasele az biroon*/
+  display: inline; /*Namayesh dar yek khat*/
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-header {
+  background-image: url("../images/Background.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  text-align: center;
+}
+
+.main-header nav {
+  border-bottom: 1px solid rgba(150, 150, 150, 0.8);
+}
+
+.main-header li {
+  margin-top: 0;
+  font-family: "abril-fatface";
+  font-variant-caps: all-petite-caps;
+}
+
+.main-header a {
+  display: inline-block;
+  padding: .2em 2em;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.main-header a:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.band-name {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Rye";
+  font-weight: normal;
+  color: white;
+  font-size: 3em;
+  padding: 0px;
+}
+
+.band-name-large {
+  padding: 20px;
+  font-size: 4.5em;
+}
+
+.section-contain * {
+  margin: 0px 0em;
+  padding: 0em 1em;
+  padding-bottom: 0.5em;
+  font-family: "cardo";
+  font-size: 1em;
+  font-weight: normal;
+  font-size: 1.3em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.section-contain h2 {
+  margin: 0px;
+  padding: 1em 0;
+  text-align: center;
+  font-family: "abril-fatface";
+  font-size: 2.5em;
+  color: rgba(40, 40, 40, 0.9)
+}
+
+.about-band-image {
+  width: 250px;
+  float: left;
+  margin: 1em;
+  margin-right: 1em;
+  padding-left: 0em;
+  margin-left: 0em;
+  padding: 0em;
+  border-radius: 10%;
+}
+
+.footer {
+  background-color: rgba(0, 156, 255, 0.6);
+  display: flex;
+  align-items: center;
+
+}
+
+.footer h3 {
+  margin: 0 .5em;
+}
+
+.footer a {
+  margin: 0 .5em;
+}
+
+.footer nav {
+  flex-grow: 1;
+  text-align: right;
+  margin: 0 1em;
 }
