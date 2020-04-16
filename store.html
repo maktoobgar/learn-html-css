@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <title>Ed Sheeran's Album</title>
   <meta name="description" content="The Ed Sheeran Store">
+  <link rel="stylesheet" href="./styles/format.css">
 </head>
 <body>
-  <header>
+  <header class="main-header">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -14,126 +15,80 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-    <hr>
-    <h1>The Generic</h1>
+    <h1 class="band-name band-name-large">The Generic</h1>
   </header>
-  <button type="button">Get Our Latst Album</button>
-  <br>
-  <br>
-  <button type="button">&#9658;</button>
-  <!-- TODO: Find a suitable background image -->
-  <section>
-    <h2>Music</h2>
-    <div>
-      <div>
-        <strong>Album 1</strong>
+  <div class="container margin-space">
+    <section class="section-contain">
+      <h2>Music</h2>
+      <div class="store-items">
+        <div class="store-item">
+          <span class="store-item-title">Album 1</span>
+          <img class="store-item-image" src="./images/Place-01.jpg" width="200px" height="200px">
+          <div class="store-item-details">
+            <span class="store-item-price">$4.99</span>
+            <button class="store-itme-btn" type="button">ADD TO CARD</button>
+          </div>
+        </div>
+        <div class="store-item">
+          <span class="store-item-title">Album 2</span>
+          <img class="store-item-image" src="./images/Place-02.jpg" width="200px" height="200px">
+          <div class="store-item-details">
+            <span class="store-item-price">$19.9</span>
+            <button class="store-itme-btn" type="button">ADD TO CARD</button>
+          </div>
+        </div>
       </div>
-      <img src="./images/Place-01.jpg" width="200px" height="200px">
-      <div>
-        <span>$4.99</span>
-        <button type="button">ADD TO CARD</button>
+      <div class="store-items">
+        <div class="store-item">
+          <span class="store-item-title">Album 3</span>
+          <img class="store-item-image" src="./images/Place-03.jpg" width="200px" height="200px">
+          <div class="store-item-details">
+            <span class="store-item-price">$15.5</span>
+            <button class="store-itme-btn" type="button">ADD TO CARD</button>
+          </div>
+        </div>
+        <div class="store-item">
+          <span class="store-item-title">Album 4</span>
+          <img class="store-item-image" src="./images/Place-04.jpg" width="200px" height="200px">
+          <div class="store-item-details">
+            <span class="store-item-price">$13.9</span>
+            <button class="store-itme-btn" type="button">ADD TO CARD</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div>
-      <div>
-        <strong>Album 2</strong>
-      </div>
-      <img src="./images/Place-02.jpg" width="200px" height="200px">
-      <div>
-        <span>$19.9</span>
-        <button type="button">ADD TO CARD</button>
-      </div>
-    </div>
-    <div>
-      <div>
-        <strong>Album 3</strong>
-      </div>
-      <img src="./images/Place-03.jpg" width="200px" height="200px">
-      <div>
-        <span>$15.5</span>
-        <button type="button">ADD TO CARD</button>
-      </div>
-    </div>
-    <div>
-      <div>
-        <strong>Album 4</strong>
-      </div>
-      <img src="./images/Place-04.jpg" width="200px" height="200px">
-      <div>
-        <span>$13.9</span>
-        <button type="button">ADD TO CARD</button>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>Merch</h2>
-    <div>
-      <strong>Forest</strong>
-    </div>
-    <img src="./images/Place-05.jpg" width="200px" height="200px">
-    <div>
-      <span>$4500</span>
-      <button type="button">ADD TO CARD</button>
-    </div>
+    <section class="section-contain">
+      <h2>Merch</h2>
+      <div class="store-items">
+        <div class="store-item">
+          <span class="store-item-title">Forest</span>
+          <img class="store-item-image" src="./images/Place-05.jpg" width="200px" height="200px">
+          <div class="store-item-details">
+            <span class="store-item-price">$4500</span>
+            <button class="store-itme-btn" type="button">ADD TO CARD</button>
+          </div>
+        </div>
+        <div class="store-item">
+          <span class="store-item-title">House</span>
+          <img class="store-item-image" src="./images/Place-06.jpg" width="200px" height="200px">
+          <div class="store-item-details">
+            <span class="store-item-price">$4000</span>
+            <button class="store-itme-btn" type="button">ADD TO CARD</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-  <div>
-    <strong>House</strong>
-  </div>
-  <img src="./images/Place-06.jpg" width="200px" height="200px">
-  <div>
-    <span>$4000</span>
-    <button type="button">ADD TO CARD</button>
-  </div>
-</div>
-</section>
-
-<section>
-  <h2>Card</h2>
-  <div>
-    <div>
-      <strong>ITEM</strong>
-      &lt;&gt;
-      <strong>PRICE</strong>
-      &lt;&gt;
-      <strong>QUANTITY</strong>
-    </div>
-    <div>
-      <img src="./images/Place-03.jpg" width="100px" height="100px">
-      <strong>Album 3</strong>
-      &lt;&gt;
-      <span>$19.9</span>
-      &lt;&gt;
-      <input type="number" value="1">
-      <button type="button">REMOVE</button>
-    </div>
-    <div>
-      <img src="./images/Place-01.jpg" width="100px" height="100px">
-      <strong>Album 1</strong>
-      &lt;&gt;
-      <span>$4.99</span>
-      &lt;&gt;
-      <input type="number" value="2">
-      <button type="button">REMOVE</button>
-    </div>
-    <hr>
-    <div>
-      <strong>Total</strong>
-      &lt;&gt;
-      <span>$24.89</span>
-    </div>
-    <div>
-      <button type="button">PURCHASE</button>
-    </div>
-  </div>
-</section>
-<footer>
-  <h3>The Generic</h3>
-  <ul>
-    <li><a href="http://youtube.com" target="_blank"><img src="./images/Youtube.png" width="20px" height="20px"></a></li>
-    <li><a href="http://spotify.com" target="_blank"><img src="./images/Spotify.png" width="20px" height="20px"></a></li>
-    <li><a href="http://facebook.com" target="_blank"><img src="./images/Facebook.png" width="20px" height="20px"></a></li>
-  </ul>
-</footer>
+  <footer class="footer">
+    <h3 class="band-name">The Generic</h3>
+    <nav class="nav">
+      <ul>
+        <li><a href="http://youtube.com" target="_blank"><img src="./images/Youtube.png" width="35px" height="35px"></a></li>
+        <li><a href="http://spotify.com" target="_blank"><img src="./images/Spotify.png" width="35px" height="35px"></a></li>
+        <li><a href="http://facebook.com" target="_blank"><img src="./images/Facebook.png" width="35px" height="35px"></a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 </html>
